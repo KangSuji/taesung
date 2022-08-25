@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="default.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="test.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="mobile-header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="./img/taesung_logo.png" />
+          </a>
+          <span class="open_btn">open</span>
+          <div class="mobile-gnb_wrap">
+            <div class="mobile-gnb hide">
+              <ul class="dep1">
+                <li id="about" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">ALL ABOUT</a>
+                  <ul class="dep2">
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">CEO 인사말</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">C주요연혁</a></li>
+                  </ul>
+                </li>
+                <li id="business" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">BUSINESS</a>
+                  <ul class="dep2">
+                    <li><a href="#">PROJECT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                  </ul>
+                </li>
+                <li id="news" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">NEWS</a>
+                  <ul class="dep2">
+                    <li><a href="#">태성소식</a></li>
+                    <li><a href="#">회사전경</a></li>
+                  </ul>
+                </li>
+                <li id="contact" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">CONTACT</a>
+                  <ul class="dep2">
+                    <li><a href="#">상담/견적문의</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">오시는길</a></li>
+                  </ul>
+                </li>
+                <li class="modernhive" id="modernhive" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">Modernhive</a>
+                  <ul class="dep2">
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">자료실</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="mobile-bg hide"></div>
+            </div>
+            <!-- //mobile-gnb -->
+          </div>
+          <!-- // mobile-gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </div>
+      <header class="header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="" />
+          </a>
+          <div class="gnb_wrap">
+            <div class="gnb">
+              <ul class="dep1">
+                <li>
+                  <a href="#" class="dep1_a">ALL ABOUT</a>
+                  <ul class="dep2">
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">CEO 인사말</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">C주요연혁</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">BUSINESS</a>
+                  <ul class="dep2">
+                    <li><a href="#">PROJECT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">NEWS</a>
+                  <ul class="dep2">
+                    <li><a href="#">태성소식</a></li>
+                    <li><a href="#">회사전경</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">CONTACT</a>
+                  <ul class="dep2">
+                    <li><a href="#">상담/견적문의</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">오시는길</a></li>
+                  </ul>
+                </li>
+                <li class="modernhive">
+                  <a href="#" class="dep1_a">Modernhive</a>
+                  <ul class="dep2">
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">자료실</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+          </div>
+          <!-- // gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </header>
+      <!-- // header -->
+
+      <div class="main_wrap">
+        <div class="main_visual">
+          <div class="slide-wrap">
+            <div class="main_visual-bg" id="bg_1">
+              <div class="main_visual-text_wrap">
+                <img src="img/simbol_imgs.png" />
+                <div class="main_visual-txt">머물고 싶은 공간</div>
+                <div class="main_visual-txt">순간 순간의 기록들</div>
+              </div>
+            </div>
+            <div class="main_visual-bg" id="bg_2">
+              <div class="main_visual-text_wrap">
+                <img src="img/simbol_imgs.png" />
+                <div class="main_visual-txt">머물고 싶은 공간</div>
+                <div class="main_visual-txt">순간 순간의 기록들</div>
+              </div>
+            </div>
+            <div class="main_visual-bg" id="bg_3">
+              <div class="main_visual-text_wrap">
+                <img src="img/simbol_imgs.png" />
+                <div class="main_visual-txt">머물고 싶은 공간</div>
+                <div class="main_visual-txt">순간 순간의 기록들</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main_visual-scroll">
+            <img src="img/scroll.png" />
+          </div>
+        </div>
+        <!-- //main_visual -->
+        <div class="main_content">
+          <section class="sec01">
+            <div class="sec-inner">
+              <div class="sec-left">
+                <div class="sec-text">
+                  <div class="sec-text-tit">사람과 집을 연결하는 공간</div>
+                  <div class="sec-text-txt">
+                    태성건설개발은 부지선점부터 개발,건축까지 가능합니다.<br />
+                    한번에ALL 가능한 태성에서 가치를 더해보세요.
+                  </div>
+                </div>
+              </div>
+              <div class="sec-right">
+                <img src="img/img01.png" />
+              </div>
+            </div>
+          </section>
+          <section class="sec02">
+            <div class="sec-inner">
+              <div class="sec-left">
+                <img src="img/img02.png" />
+              </div>
+              <div class="sec-right">
+                <div class="sec-text">
+                  <div class="sec-text-tit">
+                    사람과 자연 그리고 주거까지 <br />풍요로운 삶의 터를 만드는
+                    회사
+                  </div>
+                  <div class="sec-text-txt">
+                    자연이 만들어준 행복한 주거공간에 실용성을 더하였습니다.<br />
+                    단언컨대 더욱 내일이 빛날 일상을 상상해보세요.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sec03">
+            <div class="sec-inner">
+              <div class="sec-left">
+                <div class="sec-text">
+                  <div class="sec-text-tit">집을 바라보는 새로운 시선</div>
+                  <div class="sec-text-txt">
+                    새로운 투자가치를 선도하는 이유있는 자신감,<br />
+                    단순히 거주뿐만 아니라 그 이상 투자를 통해 수익창출이
+                    가능합니다.
+                  </div>
+                </div>
+              </div>
+              <div class="sec-right">
+                <img src="img/img03.png" />
+              </div>
+            </div>
+          </section>
+          <section class="instagram">
+            <div class="insta-title">
+              <div class="title-left">Instagram</div>
+              <div class="title-right">
+                Follow us on Instagram <span class="bold">@ts_taesung</span>
+              </div>
+            </div>
+            <div class="insta-feed">
+              <div class="feed">
+                <a href="https://www.instagram.com/p/CfddOW5LPNa/">
+                  <img src="./img/feed01.png" />
+                  <div class="feed-bg"></div>
+                </a>
+              </div>
+
+              <div class="feed">
+                <a href="https://www.instagram.com/p/CfddM16Lb20/">
+                  <img src="./img/feed02.png" />
+                  <div class="feed-bg"></div>
+                </a>
+              </div>
+
+              <div class="feed">
+                <a href="https://www.instagram.com/p/CfddLXzrUT1/">
+                  <img src="./img/feed03.png" />
+                  <div class="feed-bg"></div>
+                </a>
+              </div>
+
+              <div class="feed">
+                <a href="https://www.instagram.com/ts_taesung/">
+                  <img src="./img/feed04.png" />
+                  <div class="feed-bg"></div>
+                </a>
+              </div>
+
+              <div class="feed">
+                <a href="https://www.instagram.com/ts_taesung/">
+                  <img src="./img/feed05.png" />
+                  <div class="feed-bg"></div>
+                </a>
+              </div>
+
+              <div class="feed">
+                <a href="https://www.instagram.com/ts_taesung/">
+                  <img src="./img/feed06.png" />
+                  <div class="feed-bg"></div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="info_form">
+            <div class="info-left">
+              <div class="info-text">
+                <div class="txt01">
+                  믿고 맡길 수 있는 기업<br />태성건설개발과 함께 하세요.
+                </div>
+                <div class="txt02">CS CENTER</div>
+                <div class="txt03">1599.2929</div>
+              </div>
+            </div>
+            <div class="info-right">
+              <form class="info_form-frm">
+                <div class="frm-tit">
+                  <span>빠른상담문의</span>
+                </div>
+                <div class="frm-input_text">
+                  <input type="text" placeholder="이름" />
+                  <input type="text" placeholder="연락처" />
+                </div>
+                <div class="frm-input_textarea">
+                  <textarea placeholder="상담 내용을 입력해 주세요."></textarea>
+                </div>
+                <div class="frm-input_chk">
+                  <input type="checkbox" />
+                  <span>개인정보 수집 및 이용에 동의합니다. [약관보기]</span>
+                </div>
+                <div class="submitBtn">상담신청하기</div>
+              </form>
+            </div>
+          </section>
+          <div class="foot-logo">
+            <a href="#">
+              <div class="foot-logos">
+                <img src="img/ts_logo.png" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="foot-logos">
+                <img src="img/hive_logo.png" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="foot-logos">
+                <img src="img/taesung_logo.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- // main_wrap -->
+      <footer>
+        <div class="footer">
+          <img src="img/foot_logo.png" />
+          <div class="footer-info">
+            (주)태성건설개발 ㅣ 대표자: 박수정 ㅣ 사업자등록번호:
+            303-88-02069<br />
+            서울특별시 송파구 백제고분로 364, 7층(석촌동, 대신빌딩) ㅣ 대표전화:
+            1599-5929
+          </div>
+          <div class="footer-copy">
+            Copyright ⓒ 2022 태성건설개발 All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="navigation">
+      <div class="nav-logo">
+        <a href="#">
+          <div class="nav-logo-bg">
+            <img src="./img/icon_project.png" />
+          </div>
+        </a>
+        PROJECT
+      </div>
+      <div class="nav-logo">
+        <a href="#">
+          <div class="nav-logo-bg">
+            <img src="./img/icon_cotact.png" />
+          </div>
+        </a>
+        CONTACT
+      </div>
+      <div class="nav-logo">
+        <a href="#">
+          <div class="nav-logo-bg">
+            <img src="./img/icon_down.png" />
+          </div>
+        </a>
+        <span class="nav-text" style="margin-left: -5px">카다로그신청</span>
+      </div>
+      <div class="nav-logo">
+        <a href="#">
+          <div class="nav-logo-bg none">
+            <img src="./img/icon_blog.png" />
+          </div>
+          <span class="nav-text">블로그</span>
+        </a>
+      </div>
+      <div class="nav-logo">
+        <a href="https://www.instagram.com/ts_taesung/">
+          <div class="nav-logo-bg none">
+            <img src="./img/icon_instagram.png" />
+          </div>
+        </a>
+        <span class="nav-text">인스타그램</span>
+      </div>
+    </div>
+    <div class="openBtn"></div>
+  </body>
+</html>
+<script>
+  function addOver(id) {
+    if ($("#" + id).hasClass("over")) {
+      $("#" + id).removeClass("over");
+    } else {
+      $("#" + id).addClass("over");
+    }
+  }
+  $(".open_btn").click(function () {
+    if ($(".mobile-gnb").hasClass("hide")) {
+      $(".mobile-gnb").removeClass("hide");
+      $(".mobile-bg").removeClass("hide");
+    } else {
+      $(".mobile-gnb").addClass("hide");
+      $(".mobile-bg").addClass("hide");
+    }
+  });
+</script>

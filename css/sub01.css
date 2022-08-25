@@ -1,0 +1,99 @@
+.com-info {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.com-info .info-info-main_content {
+  width: 100%;
+}
+.com-info .info-main_content .info-sec01,
+.com-info .info-main_content .info-sec02,
+.com-info .info-main_content .info-sec03 {
+  width: 100%;
+  padding: 60px 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.com-info .info-main_content .info-sec-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.com-info .info-main_content .info-sec-left,
+.com-info .info-main_content .info-sec-right {
+  width: 50%;
+}
+.com-info .info-main_content .info-sec-right img,
+.com-info .info-main_content .info-sec-left img {
+  width: 100%;
+}
+
+.com-info .info-main_content .info-sec-text-tit::after {
+  content: "";
+  display: block;
+  width: 60px;
+  border-bottom: 1px solid #8b8b8b;
+  margin-top: 35px;
+}
+.com-info .info-main_content .info-sec-text .info-sec-text-tit {
+  font-family: "Noto Serif KR", serif;
+  font-size: 2.625em;
+}
+.com-info .info-main_content .info-sec-text .info-sec-text-txt {
+  font-family: "Pretendard Variable";
+  font-size: 22px;
+  line-height: 1.375em;
+}
+.com-info .info-main_content .info-sec01 .info-sec-inner .info-sec-left,
+.com-info .info-main_content .info-sec03 .info-sec-inner .info-sec-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.com-info .info-main_content .info-sec01 .info-sec-inner .info-sec-left .info-sec-text {
+  width: 490px;
+  height: 240px;
+  vertical-align: middle;
+}
+.com-info .info-main_content .info-sec01 .info-sec-inner .info-sec-left .info-sec-text .info-sec-text-tit {
+  width: 490px;
+  height: 60px;
+}
+.com-info .info-main_content .info-sec01 .info-sec-inner .info-sec-left .info-sec-text .info-sec-text-txt {
+  width: 490px;
+  height: 60px;
+  margin-top: 120px;
+}
+
+.com-info .info-main_content .info-sec02 .info-sec-inner .info-sec-right .info-sec-text {
+  width: 571px;
+  height: 334px;
+  padding-left: 60px;
+}
+.com-info .info-main_content .info-sec02 .info-sec-inner .info-sec-right .info-sec-text .info-sec-text-tit {
+  width: 590px;
+  height: 176px;
+}
+.com-info .info-main_content .info-sec02 .info-sec-inner .info-sec-right .info-sec-text .info-sec-text-txt {
+  width: 571px;
+  height: 94px;
+  margin-top: 64px;
+}
+.com-info .info-main_content .info-sec02 .info-sec-inner .info-sec-left {
+  overflow: hidden;
+}
+
+.com-info .info-main_content .info-sec03 .info-sec-inner .info-sec-left .info-sec-text {
+  width: 600px;
+  height: 274px;
+}
+.com-info .info-main_content .info-sec03 .info-sec-inner .info-sec-left .info-sec-text .info-sec-text-tit {
+  width: 582px;
+  height: 60px;
+}
+.com-info .info-main_content .info-sec03 .info-sec-inner .info-sec-left .info-sec-text .info-sec-text-txt {
+  width: 600px;
+  height: 94px;
+  margin-top: 120px;
+}

@@ -1,0 +1,139 @@
+.businessWrap {
+  width: 100%;
+  box-sizing: border-box;
+}
+.businessWrap .businessNav {
+  width: 100%;
+  height: 60px;
+  padding: 80px 320px 180px;
+  box-sizing: border-box;
+  background-clip: content-box;
+  margin: 0 auto;
+}
+.businessWrap .businessNav .nav-wrap {
+  width: 1280px;
+  height: 60px;
+  border: 1px solid #11368d;
+  margin: 0 auto;
+}
+.businessWrap .businessNav .nav-wrap ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  font-size: 0;
+}
+.businessWrap .businessNav .nav-wrap ul li {
+  width: 33.33%;
+  height: 60px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 60px;
+  border-right: 1px solid #11368d;
+  font-size: 1.25rem;
+  font-family: "Pretendard Variable";
+}
+.businessWrap .businessNav .nav-wrap ul li:last-child {
+  border-right: none;
+}
+.businessWrap .businessNav .nav-wrap ul li.active {
+  color: #ffffff;
+  background-color: #11368d;
+}
+.businessWrap .townHouse {
+  width: 100%;
+  position: relative;
+}
+.businessWrap .townHouse .townHouse-img {
+  width: 1172px;
+  height: 500px;
+}
+.businessWrap .townHouse .townHouse-img img {
+  width: 100%;
+}
+.businessWrap .townHouse .townHouse-text {
+  width: 640px;
+  height: 440px;
+  background-color: #f5f8ff;
+  position: absolute;
+  top: 125px;
+  right: 320px;
+}
+.businessWrap .townHouse .townHouse-text .house-text-tit {
+  width: 230px;
+  height: 60px;
+  text-align: center;
+  font-size: 42px;
+  font-family: "Noto Serif KR", serif;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #0f1015;
+  margin: 0 auto;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+.businessWrap .townHouse .townHouse-text .house-text-tit::after {
+  content: "";
+  display: block;
+  width: 60px;
+  border-bottom: 1px solid #8b8b8b;
+  margin: 35px auto;
+}
+.businessWrap .townHouse .townHouse-text .house-text-txt {
+  width: 590px;
+  height: 120px;
+  font-size: 1.25rem;
+  font-family: "Pretendard Variable";
+  color: #0f1015;
+  padding: 148px 27px 80px;
+  text-align: center;
+  line-height: 32px;
+}
+.businessWrap .townHouse .townHouse-text .house-text-txt p {
+  margin: 0;
+}
+
+/* advantages */
+
+.businessWrap .advantages {
+  width: 100%;
+  box-sizing: border-box;
+}
+.businessWrap .advantages .advantage-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 127px 325px 120px;
+  box-sizing: border-box;
+}
+.businessWrap .advantage-box {
+  width: 246px;
+  height: 300px;
+  border: 1px solid #11368d;
+  margin-right: 10px;
+}
+.businessWrap .advantage-box:last-child {
+  margin-right: 0px;
+}
+.businessWrap .advantage-tit {
+  width: 100%;
+  font-size: 42px;
+  font-family: "Montserrat", sans-serif;
+  color: #11368d;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.businessWrap .advantage-text {
+  width: 100%;
+  font-size: 1.25rem;
+  font-family: "Pretendard Variable";
+  color: #0f1015;
+  text-align: center;
+  padding: 36px 29px 0;
+  box-sizing: border-box;
+}

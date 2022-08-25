@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/sub04-03.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-map">
+      <div class="map-img_wrap">
+        <img src="./img/20302742.png" />
+        <div class="map_text">
+          <p class="map_text-tit">TEL: 1599.5929</p>
+          <p class="map_text-txt">
+            ts_taesung@naver.com <br />
+            서울특별시 송파구 백제고분로 364, 7층(석촌동, 대신빌딩)<br />
+            364, Baekjegobun-ro, Songpa-gu, Seoul, Republic of Korea
+          </p>
+        </div>
+      </div>
+      <div class="map-area">
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1661159398980" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+          new daum.roughmap.Lander({
+            timestamp: "1661159398980",
+            key: "2bg8h",
+            mapWidth: "640",
+            mapHeight: "500",
+          }).render();
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

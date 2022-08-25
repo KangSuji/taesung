@@ -1,0 +1,80 @@
+.gallery {
+  width: 100%;
+}
+.gallery .gallery-wrap {
+  width: 100%;
+  display: flex;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+.gallery-left {
+  height: 350px;
+  padding-left: 320px;
+  padding-right: 80px;
+}
+.gallery-right {
+  width: 100%;
+  max-width: 1290px;
+  height: 350px;
+}
+.gallery-left ul {
+  height: 70%;
+  border-left: 1px solid #0f1015;
+  list-style: none;
+  margin: 0;
+}
+.gallery-left ul li {
+  height: 39px;
+  padding: 33px;
+  box-sizing: border-box;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  color: #0f1015;
+}
+.gallery-right img {
+  width: 450px;
+  height: 350px;
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.gallery-left .slideArr {
+  width: 106px;
+  margin: 0 auto;
+  margin-top: 55px;
+  cursor: pointer;
+}
+
+/* 모달 팝업 */
+
+.dim {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.madalImg {
+  width: 1000px;
+  height: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.madalImg img {
+  width: 100%;
+}
+.closeBtn {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #11368d;
+  float: right;
+  cursor: pointer;
+}

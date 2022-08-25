@@ -1,0 +1,82 @@
+.ceo {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80px 0px 120px;
+}
+.ceo-inner {
+  width: 100%;
+  padding: 0 320px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.ceo-left,
+.ceo-right {
+  width: 50%;
+}
+.ceo-left img {
+  width: 100%;
+}
+.ceo-right {
+  position: relative;
+}
+.ceo-text {
+  width: 680px;
+  height: 687px;
+  position: absolute;
+  top: 50px;
+  left: -40px;
+  background-color: #fff;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+.ceo-text p {
+  margin: 0;
+}
+.ceo-text-tit #t1 {
+  width: 550px;
+  height: 40px;
+  font-size: 2.125em;
+  line-height: 2.125em;
+  font-family: "Pretendard Variable";
+  letter-spacing: 0px;
+  color: #11368d;
+}
+.ceo-text-tit #t2 {
+  width: 350px;
+  height: 50px;
+  font-size: 2.625em;
+  line-height: 2.125em;
+  font-weight: bold;
+  font-family: "Pretendard Variable";
+  color: #11368d;
+  padding: 8px 0px 80px;
+}
+.ceo-text-txt {
+  width: 621px;
+  height: 330px;
+  font-size: 1.25em;
+  line-height: 2.125em;
+  font-family: "Pretendard Variable";
+  color: #0f1015;
+}
+.margin-bttom {
+  padding-bottom: 20px;
+}
+.sign {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.affi {
+  font-size: 1.25em;
+  line-height: 2.125em;
+  font-family: "Pretendard Variable";
+  color: #0f1015;
+}
+.name {
+  color: #0f1015;
+  font-size: 2.625em;
+  line-height: 2.125em;
+  font-family: "ROEHOE-CHAN";
+}

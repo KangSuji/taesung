@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/sub02-02.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="gallery-wrap">
+        <div class="gallery-left">
+          <ul>
+            <li>Modern</li>
+            <li>Nature</li>
+            <li>Minimalism</li>
+          </ul>
+          <div class="slideArr">
+            <span class="prev">
+              <img src="./img/control_arr_left.jpg" />
+            </span>
+            <span class="next">
+              <img src="./img/control_arr_right.jpg" />
+            </span>
+          </div>
+        </div>
+        <div class="gallery-right">
+          <img src="./img/house-gfbf02c601_1280.png" onclick="showModal(src)" />
+
+          <img src="./img/architecture-1477094_1280.png" onclick="showModal(src)" />
+
+          <img src="./img/CK_pc002122418.png" onclick="showModal(src)" />
+
+          <img src="./img/CK_cm310049747.png" onclick="showModal(src)" />
+        </div>
+      </div>
+    </div>
+    <div class="dim">
+      <div class="madalImg">
+        <div class="closeBtn" id="close"></div>
+        <img src="" />
+      </div>
+    </div>
+  </body>
+</html>
