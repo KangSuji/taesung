@@ -9,8 +9,7 @@
   height: 50px;
   /* padding-left: 70px; */
   background-color: #fff;
-  transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out,
-    margin 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out, margin 0.3s ease-in-out;
   display: none;
 }
 .mobile-header .logo {
@@ -169,8 +168,7 @@
   height: 90px;
   padding-left: 70px;
   background-color: transparent;
-  transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out,
-    margin 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out, margin 0.3s ease-in-out;
 }
 .header .logo {
   display: block;

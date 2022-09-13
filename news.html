@@ -1,197 +1,222 @@
-<style>
-  .box__gallery {
-    margin: 50px auto 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/sub03-01.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <style>
+    .news-box__gallery {
+      margin: 50px auto 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  .box__gallery li {
-    width: 23.5%;
-    height: 280px;
-    margin-bottom: 40px;
-    margin-right: 2%;
-    overflow: hidden;
-  }
-  .box__gallery li:nth-child(4n + 4) {
-    margin-right: 0;
-  }
-  .box__gallery li img {
-    width: 100%;
-    height: 100%;
-    transition: all 0.15s ease-in-out;
-  }
-  .box__gallery li img:hover {
-    transform: scale(1.1);
-  }
-  /* //슬라이드 팝업창 */
-  .slide-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-    z-index: 99;
-  }
+    .news-box__gallery li {
+      width: 23.5%;
+      height: 280px;
+      margin-bottom: 40px;
+      margin-right: 2%;
+      overflow: hidden;
+    }
+    .news-box__gallery li:nth-child(4n + 4) {
+      margin-right: 0;
+    }
+    .news-box__gallery li img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.15s ease-in-out;
+    }
+    .news-box__gallery li img:hover {
+      transform: scale(1.1);
+    }
+    /* //슬라이드 팝업창 */
+    .slide-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      z-index: 99;
+    }
 
-  .slide__container {
-    position: absolute;
-    width: 960px;
-    height: 520px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-  }
+    .slide__container {
+      position: absolute;
+      width: 960px;
+      height: 520px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+    }
 
-  .slides > li img {
-    width: 100%;
-  }
+    .slides > li img {
+      width: 100%;
+    }
 
-  /* 슬라이드 버튼 */
-  .slide-btn {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 9;
-  }
+    /* 슬라이드 버튼 */
+    .slide-btn {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9;
+    }
 
-  .slide-btn .lnr {
-    font-size: 24px;
-  }
+    .slide-btn .lnr {
+      font-size: 24px;
+    }
 
-  .--prev {
-    left: 20%;
-  }
+    .--prev {
+      left: 20%;
+    }
 
-  .--next {
-    right: 20%;
-  }
+    .--next {
+      right: 20%;
+    }
 
-  /* 닫기버튼 */
-  .close-btn {
-    position: absolute;
-    padding: 1em;
-    top: 156px;
-    right: 25%;
-    background: #e94b24;
-    z-index: 99999999;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
-  .close-btn .lnr {
-    font-size: 24px;
-    color: #fff;
-  }
+    /* 닫기버튼 */
+    .close-btn {
+      position: absolute;
+      padding: 1em;
+      top: 156px;
+      right: 25%;
+      background: #e94b24;
+      z-index: 99999999;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    .close-btn .lnr {
+      font-size: 24px;
+      color: #fff;
+    }
 
-  /* bullet */
-  #bullets {
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+    /* bullet */
+    #bullets {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-  #bullets > li {
-    float: left;
-    margin: 0 8px;
-  }
+    #bullets > li {
+      float: left;
+      margin: 0 8px;
+    }
 
-  #bullets > li > a {
-    display: block;
-    text-decoration: none;
-    color: transparent;
-    width: 1em;
-    height: 1em;
-    background-color: rgb(165, 165, 165);
-    border-radius: 50%;
-    transition: 0.2s;
-  }
+    #bullets > li > a {
+      display: block;
+      text-decoration: none;
+      color: transparent;
+      width: 1em;
+      height: 1em;
+      background-color: rgb(165, 165, 165);
+      border-radius: 50%;
+      transition: 0.2s;
+    }
 
-  #bullets > li > a.on {
-    background-color: #e94b24;
-  }
-</style>
+    #bullets > li > a.on {
+      background-color: #e94b24;
+    }
+  </style>
+  <body>
+    <div class="news">
+      <div class="news-wrap">
+        <div class="news-text">
+          <div class="news-tit">회사전경</div>
+          <div class="news-txt"></div>
+        </div>
+        <div class="sub_cont">
+          <ul class="news-box__gallery">
+            <li>
+              <a href="./img/feed01.png">
+                <img src="./img/feed01.png" alt="이미지1" />
+              </a>
+            </li>
+            <li>
+              <a href="./img/feed02.png">
+                <img src="./img/feed02.png" alt="이미지2" />
+              </a>
+            </li>
+            <li>
+              <a href="./img/feed03.png">
+                <img src="./img/feed03.png" alt="이미지3" />
+              </a>
+            </li>
+            <li>
+              <a href="./img/feed04.png">
+                <img src="./img/feed04.png" alt="이미지4" />
+              </a>
+            </li>
+            <li>
+              <a href="./img/feed05.png">
+                <img src="./img/feed05.png" alt="이미지5" />
+              </a>
+            </li>
+            <li>
+              <a href="./img/feed06.png">
+                <img src="./img/feed06.png" alt="이미지6" />
+              </a>
+            </li>
+            <li>
+              <a href="./img/feed01.png">
+                <img src="./img/feed01.png" alt="이미지7" />
+              </a>
+            </li>
+            <li>
+              <a href="./img/feed02.png">
+                <img src="./img/feed02.png" alt="이미지8" />
+              </a>
+            </li>
+          </ul>
 
-<div class="sub_cont">
-  <ul class="box__gallery">
-    <li data-aos="fade-up" data-aos-duration="1000">
-      <a href="/images/youngbae/pp01.jpg">
-        <img src="/images/youngbae/pp01.jpg" alt="이미지1" />
-      </a>
-    </li>
-    <li data-aos="fade-up" data-aos-duration="1000">
-      <a href="/images/youngbae/pp02.jpg">
-        <img src="/images/youngbae/pp02.jpg" alt="이미지2" />
-      </a>
-    </li>
-    <li data-aos="fade-up" data-aos-duration="1000">
-      <a href="/images/youngbae/pp03.jpg">
-        <img src="/images/youngbae/pp03.jpg" alt="이미지3" />
-      </a>
-    </li>
-    <li data-aos="fade-up" data-aos-duration="1000">
-      <a href="/images/youngbae/pp04.jpg">
-        <img src="/images/youngbae/pp04.jpg" alt="이미지4" />
-      </a>
-    </li>
-    <li data-aos="fade-up" data-aos-duration="1000">
-      <a href="/images/youngbae/pp05.jpg">
-        <img src="/images/youngbae/pp05.jpg" alt="이미지5" />
-      </a>
-    </li>
-    <li data-aos="fade-up" data-aos-duration="1000">
-      <a href="/images/youngbae/pp06.jpg">
-        <img src="/images/youngbae/pp06.jpg" alt="이미지6" />
-      </a>
-    </li>
-    <li data-aos="fade-up" data-aos-duration="1000">
-      <a href="/images/youngbae/pp07.jpg">
-        <img src="/images/youngbae/pp07.jpg" alt="이미지7" />
-      </a>
-    </li>
-    <li data-aos="fade-up" data-aos-duration="1000">
-      <a href="/images/youngbae/pp08.jpg">
-        <img src="/images/youngbae/pp08.jpg" alt="이미지8" />
-      </a>
-    </li>
-  </ul>
-
-  <div class="slide-overlay">
-    <button class="close-btn"><span class="lnr lnr-cross"></span></button>
-    <button class="slide-btn --prev">
-      <span class="lnr lnr-chevron-left"></span>
-    </button>
-    <button class="slide-btn --next">
-      <span class="lnr lnr-chevron-right"></span>
-    </button>
-    <div class="slide__container">
-      <ul class="slides">
-        <li><img src="" alt="이미지1" /></li>
-        <li><img src="" alt="이미지2" /></li>
-        <li><img src="" alt="이미지3" /></li>
-        <li><img src="" alt="이미지4" /></li>
-        <li><img src="" alt="이미지5" /></li>
-        <li><img src="" alt="이미지6" /></li>
-      </ul>
+          <div class="slide-overlay">
+            <button class="close-btn"><span class="lnr lnr-cross"></span></button>
+            <button class="slide-btn --prev">
+              <span class="lnr lnr-chevron-left"></span>
+            </button>
+            <button class="slide-btn --next">
+              <span class="lnr lnr-chevron-right"></span>
+            </button>
+            <div class="slide__container">
+              <ul class="slides">
+                <li><img src="" alt="이미지1" /></li>
+                <li><img src="" alt="이미지2" /></li>
+                <li><img src="" alt="이미지3" /></li>
+                <li><img src="" alt="이미지4" /></li>
+                <li><img src="" alt="이미지5" /></li>
+                <li><img src="" alt="이미지6" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
+  </body>
+</html>
 <script>
   const overlay = document.querySelector(".slide-overlay");
   let slides = document.querySelectorAll(".slides > li");
   let slidePhoto = document.querySelectorAll(".slides > li>img");
   const slide = document.querySelector(".slides");
-  const thumbnails = document.querySelectorAll(".box__gallery > li");
+  const thumbnails = document.querySelectorAll(".news-box__gallery > li");
   const photoCount = slides.length;
   const duration = 400;
   let bullets = 0;

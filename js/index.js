@@ -65,13 +65,49 @@ $(function () {
   });
 
   //갤러리 slick
-  $(".gallery-right").slick({
+  // $(".gallery-right").slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   infinite: false,
+  //   swipeToSlide: true,
+  //   nextArrow: $(".next"),
+  //   prevArrow: $(".prev"),
+  //   responsive: [
+  //     {
+  //       breakpoint: 1250,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 780,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //   ],
+  // });
+  $(".box__gallery").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     swipeToSlide: true,
     nextArrow: $(".next"),
     prevArrow: $(".prev"),
+    responsive: [
+      {
+        breakpoint: 1250,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
 // 갤러리 모달팝업
@@ -93,3 +129,8 @@ const mon = date.getMonth() + 1;
 const hour = date.getHours();
 const min = date.getMinutes();
 const day = date.getDate();
+
+function nextModal() {
+  const src = $(".madalImg img").attr("src");
+  console.log(src);
+}
