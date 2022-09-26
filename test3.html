@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.6.1/lightgallery.min.js"
+      integrity="sha512-2KYdY5Sg3LCcbEnJ6JSoDyFDpgoDHPHl+4ZFE1DV23IVqiCSsjfkmuhJ0Uu6VTkvqaRtQDZ/LyhmMXvWUfymSw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./css/lightgallery-bundle.css" />
+    <script type="text/javascript" src="./js/lightgallery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="methods">
+      <a href="./img/feed01.png">
+        <img src="./img/feed01.png" />
+      </a>
+      <a href="./img/feed01.png">
+        <img src="./img/feed01.png" />
+      </a>
+      ...
+    </div>
+  </body>
+</html>
+<script>
+  var el = document.getElementById("methods");
+
+  var slide = '<a href="img/img2.jpg">' + '<img src="img/thumb2.jpg" />' + "</a>";
+
+  lightGallery(el);
+
+  document.getElementById("appendSlide").addEventListener(
+    "click",
+    function () {
+      el.insertAdjacentHTML("beforeend", slide);
+      window.lgData[el.getAttribute("lg-uid")].destroy(true);
+      lightGallery(el);
+    },
+    false
+  );
+</script>
